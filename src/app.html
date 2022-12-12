@@ -1,7 +1,6 @@
 <template>
   <div class="container">
     <h2 style="color: rgb(6, 0, 128)">Super ToDos List</h2>
-
     <input type="text" value.bind="toDoDescription" class="form-check-label" style="color: rgb(0, 17, 255)" />
 
     <button click.trigger="addToDo()" type="submit" disabled.bind="!toDoDescription" class="btn btn-primary btn-sm">

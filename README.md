@@ -1,4 +1,4 @@
-# `my-toDos`
+# `my-app`
 
 This project is bootstrapped by [aurelia-cli](https://github.com/aurelia/cli).
 
@@ -31,4 +31,3 @@ Run `npm run build`, or the old way `au build --env prod`.
 Run `au test` (or `au jest`).
 
 To run in watch mode, `au test --watch` or `au jest --watch`.
-# _my-toDos

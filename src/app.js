@@ -4,8 +4,6 @@ export class App {
     this.toDoDescription = "";
   }
 
-  
-
   addToDo() {
     this.toDos.push({ description: this.toDoDescription });
     this.toDoDescription = "";

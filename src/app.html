@@ -2,22 +2,19 @@
   <div class="container">
     <h2 style="color: rgb(6, 0, 128)">Super ToDos List</h2>
 
-    <form submit.trigger="addToDo()">
-      <input type="text" value.bind="toDoDescription" class="form-check-label" style="color: rgb(0, 17, 255)" />
+    <input type="text" value.bind="toDoDescription" class="form-check-label" style="color: rgb(0, 17, 255)" />
 
-      <button type="submit" disabled.bind="!toDoDescription" class="btn btn-primary btn-sm">
-        Add toDo
-      </button>
-    </form>
-
-    
+    <button click.trigger="addToDo()" type="submit" disabled.bind="!toDoDescription" class="btn btn-primary btn-sm">
+      Add toDo
+    </button>
     <ul>
       <li repeat.for="toDo of toDos">
         <span style="color: rgba(45, 9, 96, 0.715)"> ${toDo.description} </span>
-        <button click.trigger="removeToDo($toDo)" class="btn btn-secondary btn-sm">
+        <button click.trigger="removeToDo($index)" class="btn btn-secondary btn-sm">
           Remove
         </button>
       </li>
     </ul>
+
   </div>
 </template>
